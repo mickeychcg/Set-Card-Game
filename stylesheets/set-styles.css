@@ -1,0 +1,165 @@
+/* * * * * * * * */
+/* Board Styles  */
+/* * * * * * * * */
+#set-board {
+  text-align: center;
+}
+
+/* * * * * * * * * */
+/* Controls Styles */
+/* * * * * * * * * */
+#controls {
+  text-align: center;
+}
+#controls ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#controls ul li {
+  display: inline-block;
+  margin: 20px 30px;
+}
+#controls button {
+  min-width: 150px;
+}
+
+/* * * * * * * * * * * */
+/* Game Status Styles  */
+/* * * * * * * * * * * */
+#game-status ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#game-status ul li {
+  display: inline-block;
+  margin: 20px 30px;
+  color: white;
+}
+
+/* * * * * * * * * * */
+/* Card List Styles  */
+/* * * * * * * * * * */
+#cards {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* * * * * * * */
+/* Card Styles */
+/* * * * * * * */
+#cards li {
+  display: inline-block;
+  margin: 15px;
+  border: 1px solid black;
+  background-color: white;
+  width: 100px;
+  height: 150px;
+  overflow: hidden;
+}
+#cards li.hint {
+  background-color: #fcbdbd;
+}
+#cards li.selected {
+  background-color: #fff5c6;
+}
+#cards li .slot {
+  box-sizing: border-box;
+  display: none;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  border-width: 2px;
+  border-style: solid;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 20%;
+}
+/* Style slot's position and display value based on the card's number value */
+#cards li.one .slot.first {
+  display: block;
+  top: 40%;
+}
+#cards li.two .slot.first {
+  display: block;
+  top: 20%;
+}
+#cards li.two .slot.second {
+  display: block;
+  top: 40%;
+}
+#cards li.three .slot.first {
+  display: block;
+  top: 10%;
+}
+#cards li.three .slot.second {
+  display: block;
+  top: 20%;
+}
+#cards li.three .slot.third {
+  display: block;
+  top: 30%;
+}
+/* Style slot color */
+#cards li.red .slot {
+  background-color: red;
+  border-color: red;
+}
+#cards li.green .slot {
+  background-color: green;
+  border-color: green;
+}
+#cards li.blue .slot {
+  background-color: blue;
+  border-color: blue;
+}
+/* Style slot shape */
+#cards li.oval .slot {
+  border-radius: 60%
+}
+#cards li.rectangle .slot {
+  border-radius: 10px;
+}
+/* Style slot shading */
+#cards li.open .slot {
+  background-color: white !important;
+}
+#cards li.striped .slot {
+  background-image: url('../images/striped.png');
+}
+/* Style triangles */
+/* (Styles Defined Last to overwrite background & border Styles) */
+#cards li.triangle .slot{
+  background-color: transparent !important;
+  border-width: 0px !important;
+}
+#cards li.open.red.triangle .slot {
+  background-image: url('../images/cards/open-red-triangle.png') !important;
+}
+#cards li.open.green.triangle .slot {
+  background-image: url('../images/cards/open-green-triangle.png') !important;
+}
+#cards li.open.blue.triangle .slot {
+  background-image: url('../images/cards/open-blue-triangle.png') !important;
+}
+#cards li.striped.red.triangle .slot {
+  background-image: url('../images/cards/striped-red-triangle.png') !important;
+}
+#cards li.striped.green.triangle .slot {
+  background-image: url('../images/cards/striped-green-triangle.png') !important;
+}
+#cards li.striped.blue.triangle .slot {
+  background-image: url('../images/cards/striped-blue-triangle.png') !important;
+}
+#cards li.solid.red.triangle .slot {
+  background-image: url('../images/cards/solid-red-triangle.png') !important;
+}
+#cards li.solid.green.triangle .slot {
+  background-image: url('../images/cards/solid-green-triangle.png') !important;
+}
+#cards li.solid.blue.triangle .slot {
+  background-image: url('../images/cards/solid-blue-triangle.png') !important;
+}

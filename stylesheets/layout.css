@@ -1,0 +1,136 @@
+/* Base Styles */
+body {
+  position: relative;
+  background-color: #e8e8e8;
+  background-image: url("../images/texture.png");
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Header Styles */
+header {
+  margin: 0px auto 0px auto;
+  padding: 10px 0px 10px 50px;
+  max-width: 1150px;
+}
+header h1 {
+  margin: 0px;
+  font-size: 2.5em;
+  color: #232323;
+}
+
+/* Main Styles */
+main {
+  background: #006300;
+  background-image: url("../images/felt.png");
+  margin: 0px auto 0px auto;
+  border: 1px solid black;
+  border-radius: 25px;
+  max-width: 1150px;
+}
+main button, #pop-up button {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: #bb0000;
+  padding: 5px 15px;
+  box-shadow: 0px 5px 10px black;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+main button:focus, #pop-up button:focus {
+  outline:0;
+}
+main button:active, #pop-up button:active {
+  box-shadow: 0px 3px 5px black;
+}
+main #message {
+  display: inline-block;
+  padding: 7px 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+main #message::before {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: table-cell;
+  width: 20px;
+  height: 20px;
+}
+main #message.neutral::before {
+  background-image: url('../images/neutral-icon.svg');
+}
+main #message.neutral {
+  border: 1px solid #0008bc;
+  background-color: #b5deff;
+  color: #0008bc;
+}
+main #message.success::before {
+  background-image: url('../images/success-icon.svg');
+}
+main #message.success {
+  border: 1px solid #3f6600;
+  background-color: #dff7b7;
+  color: #3f6600;
+}
+main #message.failure::before {
+  background-image: url('../images/failure-icon.svg');
+}
+main #message.failure {
+  border: 1px solid #a80000;
+  background-color: #ffc4c4;
+  color: #a80000;
+}
+main #message p {
+  margin: 0px;
+  display: table-cell;
+  padding-left: 10px;
+}
+
+.pop-up-outer {
+  background: rgba(0,0,0,0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pop-up-inner {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 50px auto 0px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 800px; 
+  min-height: 600px; 
+  background: white;
+}
+
+.pause-inner {
+  text-align: center;
+  bottom: 0;
+  margin-top: 75px;
+  max-width: 1000px;
+}
+.pause-inner p {
+  font-size: 1.5em;
+}
+
+#close {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
