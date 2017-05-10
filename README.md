@@ -11,10 +11,11 @@
   This program is a web based game that is run a JavaScript enabled browser. There are two ways to run this program.
 
   **Option A:**
-  Navigate to [samuelmaddox17.github.io/Set-Card-Game/](samuelmaddox17.github.io/Set-Card-Game/)
+  
+  Navigate to [samuelmaddox17.github.io/Set-Card-Game/](https://samuelmaddox17.github.io/Set-Card-Game/)
 
   **OptionB:**
-  1. Navigate to [github.com/SamuelMaddox17/Set-Card-Game](github.com/SamuelMaddox17/Set-Card-Game)
+  1. Navigate to [github.com/SamuelMaddox17/Set-Card-Game](https://github.com/SamuelMaddox17/Set-Card-Game)
   2. Click on the green "Clone or download" button
   3. Download as a zip file
   4. Unzip the downloaded file
